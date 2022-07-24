@@ -1,0 +1,1632 @@
+html, body, header, nav, section, article, footer, div, 
+h1, h2, h3, h4, h5, h6, dl, dt, dd, p, ul, li, a, img,span{
+  margin: 0;
+  padding: 0;}
+
+ul, li {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #3f3f3f;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+
+@font-face {
+  font-family: Pretendard-Light;
+  src: url(../fonts/Pretendard-Light.otf);
+}
+
+@font-face {
+  font-family: times;
+  src: url(../fonts/times.ttf);
+}
+
+@font-face {
+  font-family: Pretendard-thin;
+  src: url(../fonts/Pretendard-Thin.otf);
+}
+
+
+
+/* <!-- --------------------TOP START-------------------- --> */
+
+.top{
+  width: 50px; 
+  height: 50px;
+  background-color: #c4ad83; 
+  position: fixed; 
+  right: 20px; 
+  bottom: 10px;
+  line-height: 50px;
+  text-align: center;
+  z-index: 100;
+  border-radius: 50%;
+  display: none;
+}
+
+.top img{
+  width: 100%;
+}
+
+/* <!-- --------------------HEADER START-------------------- --> */
+
+header{
+  position: absolute;
+  width: 100%;
+}
+
+header h1{
+  float: left;
+  width: 44%;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+header h1 a {}
+
+header h1 a img {
+  width: 100%;
+}
+
+header div.hambtn{
+  float: right;
+  margin-top: 5%;
+  margin-right: 1%;
+  cursor: pointer;
+}
+
+header div.msidebar{
+  font-family: Pretendard-Light;
+  width: 59vw;
+  background: #3e4659;
+  position: absolute;
+  text-align: center;
+  top: 0%;
+  height: 204vh;
+  z-index: 10;
+  transition: all .3s;
+}
+
+.hide{
+  transform: translateX(1061px);
+}
+
+.show{
+  transform: translateX(65%);
+}
+
+
+
+
+
+header div.msidebar>ul>li{
+  font-size: 2em;
+  /* line-height: 83%; */
+  line-height: 86px;
+  border-bottom: 1px solid white;
+  text-align: left;
+  margin-left: 0px;
+
+}
+
+header div.msidebar>ul>li>span{
+  width: 10%;
+    display: block;
+    float: right;
+}
+
+header div.msidebar>ul>li>span>img{
+  width: 26px;
+  margin-left: -38%;
+}
+
+
+header div.msidebar>ul>li>a{
+  margin-left: 24px;
+  color: #fff;
+}
+
+header div.msidebar>ul>li>ul.sub{
+  display: none;
+  background: #c5ad83;
+    font-size: large;
+    line-height: 46px;
+
+}
+
+header div.msidebar>ul>li>ul.sub>li{
+  border-bottom: 1px solid #1a222f;
+  transition: all .5s;
+}
+
+header div.msidebar>ul>li>ul.sub>li:hover{
+  background-color: #fff;
+}
+
+header div.msidebar>ul>li>ul.sub>li>a{
+
+  margin-left: 24px;
+
+}
+
+header div.msidebar>ul>li.closebtn{
+  width: 36px;
+  font-size: 2em;
+  position: absolute;
+  top: 3px;
+  left: -16%;
+  border-bottom: 0px solid white;
+  /* width: 60px; */
+  display: inline-block;
+
+}
+
+.closebtn img{
+  width: 36px;
+  cursor: pointer;
+}
+
+header div.closebtn img{
+  width: 100%;
+}
+
+
+
+header div.sidebar{
+  display: none;
+}
+
+
+
+
+/* <!-- --------------------SECTION START-------------------- --> */
+
+section{
+  font-family: Pretendard-Light;
+}
+
+
+section ul{}
+
+section ul li {}
+
+section div#msec ul li img{
+  width: 100%;
+  border-radius: 0 0 38% 0;
+}
+
+section div#banner{
+  display: none;
+}
+
+section p{
+  position: absolute;
+    top: 80%;
+    font-size: 4em;
+    left: 1%;
+    color: #ffff;
+}
+
+section div#msec{
+
+}
+
+/* <!-- --------------------ARTICLE START-------------------- --> */
+
+article{
+  margin-bottom: 15%;
+  text-align: center;
+}
+
+article h3{
+  margin-top: 10%;
+  margin-bottom: 6%;
+  font-family: Pretendard-Light;
+
+}
+
+article img {
+  width: 64%;
+}
+
+
+
+article div.right span:first-child{
+  position: relative;
+}
+
+
+article span.stitle {
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+  color: #b69d74;
+  font-size: 21px;
+}
+
+article span.stitle::after{
+  content: "";
+  position: absolute;
+  border: 0;
+  width: 41px;
+  height: 3px;
+  background: #b69d74;
+  z-index: 9;
+  margin-left: 5px;
+  margin-top: 9%;
+  bottom: 42%;
+  
+}
+
+
+
+article span+p {
+ 
+  font-family: Pretendard-Light;
+  color: #060606;
+  margin-top: 3%;
+  font-size: 18px;  
+  margin-bottom: 4%
+}
+
+div.right span:last-child{
+  display: block;
+  border: 1px #b69d74 solid;
+  /* padding: 5px; */
+  transition: all .5s;
+  width: 109px;
+  margin: auto;
+}
+
+div.right span:last-child a {
+  color: #b69d74;
+  display: block;
+  padding: 31p;
+  padding: 6px 20px 10px 16px;
+}
+
+div.right span:last-child:hover{
+ background: #b69d74;
+}
+
+div.right span:last-child a:hover {
+  color: #fff;
+}
+
+
+.ptxt{
+  display: none;
+}
+
+
+
+
+/* <!-- --------------------DIV#SERVICE START-------------------- --> */
+
+div#service {
+  background-image: url(../img/backimgM.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding-bottom: 8%;
+  font-family: Pretendard-Light;
+}
+
+div#service h3 {
+  text-align: center;
+  padding-top: 4%;
+}
+
+div#service h3+span {
+color: #b69d74;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+
+
+div#service>div.awrap>div{
+  position: relative;
+    width: 80%;
+    border: 1px solid #576379;
+    /* height: 200px; */
+    margin: auto;
+    padding: 21px;
+    margin-top: 10%;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+
+
+
+
+div#service>div.awrap>div:hover{
+  background-color: rgba(44, 51, 66, .5);
+}
+
+
+div#service div img{
+  width: 64px;
+  position: absolute;
+  top: 19px;
+  left: 30px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+div#service div>img:hover{
+  opacity: 0;
+  transition: all .5s;
+  
+}
+
+
+
+
+
+div#service div>span{
+  display: block;
+  margin-top: 87px;
+  margin-left: 15px;
+  margin-bottom: 19px;
+
+
+} 
+
+div#service div>span+span{
+  
+  display: block;
+  margin-top: 39px;
+  margin-left: 15px;
+  margin-bottom: 19px;
+
+}
+
+
+div#service>span:last-child{
+  margin: auto;
+  display: block;
+  background: #c4ad83;
+  width: 132px;
+  margin-top: 6%;
+  transition: all .5s;
+}
+
+
+div#service>span:last-child>a{
+  color: #fff;
+  transition: all .5s;
+  padding: 9px 22px 7px 22px;
+  display: block;
+  text-align: center;
+}
+
+
+div#service>span:last-child:hover{
+  background: #fff;
+  color: #c4ad83;
+  
+}
+
+div#service>span:last-child>a:hover{
+  color: #b69d74;
+}
+
+/* <!-- --------------------DIV#PROMO START-------------------- --> */
+
+
+div#promo{
+  text-align: center;
+  margin-top: 15%;
+  font-family: Pretendard-Light;
+  padding-bottom: 3%;
+  overflow: hidden;
+}
+
+div#promo h3 {
+  margin-bottom: 5%;
+}
+
+div#promo ul {
+
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.pcontiner{
+  width: 300vw;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  text-align: center;
+    
+}
+
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 433px;
+  perspective: 1000px;
+  /* float: left; */
+  margin-left: 7%;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #1a222f;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box-front img{
+  box-shadow: rgb(0 0 0 / 15%) 10.95px 4.95px 3.6px;
+  width:300px;
+}
+
+
+
+.flip-box-back h2{
+  border: 1px solid;
+  border-radius: 50%;
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 171px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* <!-- --------------------DIV#WHY START-------------------- --> */
+
+div#why{
+  
+ background-image: url(../img/backimgM2.png);
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ margin-top: 15%;
+ text-align: center;
+ font-family: Pretendard-Light;
+ padding: 10px;
+}
+
+div#why span{
+  display: block;
+  color: #fff;
+  font-size: 25px;
+  margin-top: 12px;
+  padding-top: 18px;
+}
+
+div#why span:first-child{
+  margin-top: 5%;
+}
+
+
+div#why span+span{
+  font-size: 14px;
+  color: #b69d74;
+  padding-top: 3px;
+}
+
+div#why ul {
+
+}
+
+div#why ul li {}
+
+div#why ul li img {
+  width: 30%;
+  margin-top: 15px;
+}
+div#why ul li:first-child>img{
+  animation: scale_image 2s linear infinite;
+}
+
+
+div#why ul li:nth-child(2)>img{
+  animation: rotate_image 10s linear infinite;
+}
+
+div#why ul li:last-child>img{
+ 
+}
+
+
+
+
+div#why>ul>li>span {
+  display: block;
+  color: #fff;
+  font-size: 25px;
+}
+
+div#why>ul>li>span+span{
+  font-size: 16px;
+  color: #fff;
+}
+
+@keyframes rotate_image{
+	100% {
+    	transform: rotate(360deg);
+    }
+  }
+
+  @keyframes scale_image{
+    0%{
+      transform: scale( 0.8 );
+    }
+    100% {
+      transform: scale( 1.0 );
+      }
+    }
+   
+
+
+
+   
+/* <!-- --------------------DIV#REVIEW START-------------------- --> */
+
+div#review{
+  background: #fff;
+  border-radius: 0 0 118px;
+  /* outline: 35px solid #eeefee; */
+  text-align: center;
+  overflow: hidden;
+  font-family: Pretendard-Light;
+  position: relative;
+  border-bottom: 30px solid #eeefee;
+  border-right: 24px solid #eeefee;
+}
+
+div#review h3{
+  margin-top: 5%;
+    margin-bottom: 30px;
+}
+
+div#review img {
+  width: 18%;
+}
+
+div#review span {
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+div#review p {
+  width: 80%;
+  margin: auto;
+  margin-top: 26px;
+  font-size: 18px;
+  color: #0b0b0a;
+}
+
+div#review p::after{
+  content: "";
+  position: absolute;
+  border: 0;
+  width: 50px;
+  height: 3px;
+  background: #b69d74;
+  z-index: 35;
+  /* margin: auto; */
+  left: 46%;
+  top: 64%;
+}
+
+div#review>div.photo{
+  width: 80%;
+  margin: auto;
+}
+
+
+div#review>div.photo>ul{
+  margin-top: 14%;
+}
+
+div#review>div.photo>ul>li{
+  float: left;
+  width: 33.33333%;
+  margin-bottom: 8%;
+}
+
+
+div#review>div.photo>ul>li>img{
+  border-radius: 50%;
+  width: 87%;
+  cursor: pointer;
+}
+
+div#review>div.photo>ul>li:nth-child(2)>img{
+
+}
+
+
+.tab-content{
+  display: none;
+}
+
+.rshow{
+  display: block;
+}
+
+.border{
+  border: 3px solid #b69d74;
+}
+
+
+
+/* <!-- --------------------DIV#APPLY START-------------------- --> */
+
+div#apply{
+  background-image: url(../img/counselingM.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 15%;
+  font-family: Pretendard-Light;
+  padding: 30px;
+  text-align: center;
+}
+
+
+div#apply div{
+  font-size: 26px;
+  color: #fff;
+  margin-left: 7px;
+  /* margin-top: 30px; */
+  padding-top: 30px;
+  text-align: left;
+}
+
+div#apply div.apl img{
+  display: none;
+} 
+
+div#apply div>span {
+
+}
+
+div#apply div>span+span{
+  display: block;
+}
+
+div#apply>div.apl>span{
+  margin: auto;
+  display: block;
+  font-size: 18px;
+  margin-left: 7px;
+  color: #fff;
+  margin-top: 30px;
+  width: 122px;
+  border: 1px solid;
+  border-radius: 29px;
+  padding: 10px;
+  transition: all .5s;
+  cursor: pointer;
+  text-align: center;
+}
+
+div#apply>div.apl>span:hover{
+  color: #1a1e37;
+  background-color: #fff;
+
+}
+div#apply div.apr span{
+display: none;
+}
+
+.apltxt{
+  display: none;
+}
+
+
+/* <!-- --------------------DIV#GALLERY START-------------------- --> */
+
+
+div#gallery{
+  font-family: Pretendard-Light;
+  text-align: center;
+  margin-top: 10%;
+
+
+}
+
+div#gallery h3 {
+  padding-bottom: 28px;
+}
+
+
+
+
+
+
+
+/* <!-- --------------------FOOTER START-------------------- --> */
+
+footer{
+  font-family: Pretendard-thin;
+  background-color: #2d2d2d;
+  margin-top: 10%;
+  text-align: center;
+  color: #fff;
+}
+
+footer div {
+  width: 80%;
+  margin: auto;
+}
+
+footer div h2{
+  padding-top: 5%;
+}
+
+footer div h2 img{
+  width: 64%;
+}
+
+footer p {
+  margin-top: 3%;
+  color: #ebebeb;
+  font-size: 15px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  width: 100%;
+  margin: auto;
+  margin-top: 3%;
+}
+
+footer ul li {
+  width: 10%;
+}
+
+footer ul li a {}
+
+footer ul li a img{
+  width: 77%;
+}
+
+footer div span{
+  color: #fff;
+}
+
+footer div span ul li{
+  color: #fff;
+}
+
+
+
+
+
+@media screen and (min-width:768px) {
+  /* .hide{
+    transform: translateX(190);
+  } */
+  
+  .show{
+    transform: translateX(113%);
+  }
+  
+  header div.msidebar {
+  
+    width: 47vw;
+}
+
+header div.msidebar>ul>li.closebtn {
+  left: -16%;
+
+}
+
+
+
+
+  section div#banner{
+    display: none;
+  }
+
+
+
+/* ---------------DIV#SERVICE START-------------  */
+
+
+div#service{
+  overflow: hidden;
+}
+  
+div#service>div.awrap>div{
+  width: 33.3333%;;
+  border: 1px solid #576379;
+  height: 200px;
+  cursor: pointer;
+  float: left;
+  margin-left: 7.5%;
+}
+
+div.awrap{
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+
+}
+
+div#service>span:last-child>a{
+  text-align: center;
+}
+
+/* <!-- --------------------DIV#PROMO START-------------------- --> */
+
+ div#promo{
+  padding-bottom: 3%;
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.pcontiner{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+
+.flip-box {
+  margin-top: 6%;
+  float: left;
+  width: 300px;
+  height: 433px;
+  margin-left: 4%;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #1a222f;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box-front img{
+  box-shadow: rgb(0 0 0 / 15%) 10.95px 4.95px 3.6px;
+  width:300px;
+}
+
+
+
+/* <!-- --------------------DIV#APPLY START-------------------- --> */
+
+
+
+div#apply {
+  padding-bottom: 19%;
+}
+
+
+
+
+div#apply div {
+  font-size: 45px;
+
+
+
+  padding-top: 30px;
+  text-align: left;
+}
+
+div#review p::after {
+  top: 57%;
+}
+
+
+
+div#apply>div.apl>span {
+  margin-top: 7%;
+}
+
+footer ul {
+
+
+  width: 54%;
+
+}
+
+
+footer ul li {
+  width: 100%;
+}
+
+footer div.fwrap div:last-child ul{
+  display: block;
+}
+
+.apltxt{
+  display: none;
+}
+
+
+
+}
+
+
+
+
+
+@media screen and (min-width:1024px) {
+  /*----------------------HEADER START---------------------- */
+  header{
+
+    z-index: 10;
+    font-family: Pretendard-Light;
+  }
+
+  header div.msidebar{
+    display: none;
+  }
+  
+  header h1{
+    width: 30%;
+
+  }
+  
+  header h1 a {}
+  
+  header h1 a img {
+    width: 100%;
+  }
+  
+  header div.hambtn{
+    display: none;
+  }
+  
+  header div.sidebar{
+    font-family: Pretendard-Light;
+    display: block;
+    float: right;
+    width: 49%;
+    margin-top: 5%;
+  }
+
+  header div.sidebar>ul{
+
+  }
+
+  header div.sidebar>ul>li{
+    float: left;
+    width: 20%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+
+header div.sidebar ul li a {
+  color: #fff;
+  display: block;
+  padding: 6px;
+  transition: all .5s;
+}
+
+header div.sidebar ul li a:hover{
+  color: #130bb0;
+}
+
+header div.sidebar ul li:hover  > .sub{
+  display: block;
+}
+
+
+header>div.sidebar>ul>li>ul.sub{
+  display: none;
+  background-color: #1f2839;
+  line-height: 33px;
+  font-size: 14px;
+
+  margin-top: 11%;
+
+}
+header>div.sidebar>ul>li>ul.sub>li:hover{
+
+background-color: #fff;
+}
+
+header>div.sidebar>ul>li>ul.sub>li>a:hover{
+  display: block;
+  color: #1f2839;;
+}
+
+.rel{position: relative;}
+.abs{position: absolute;}
+
+
+ /*----------------------section pc START---------------------- */
+
+section{
+
+
+}
+
+section div#banner{
+  height: 61vw;
+  display: block;
+}
+
+section div#banner>div{}
+
+section div#banner>div>ul {}
+
+section div#banner>div>ul>li {}
+
+section div#banner>div>ul>li>img {
+  width: 100%;
+  border-radius: 0 0 38% 0;
+}
+#pc_banner{}
+.imgbox>li{
+  width: 100%;
+  opacity: 0; 
+  left: 0; top: 0; 
+  transition: all .8s;
+}
+.imgbox li.on{
+ opacity: 1;
+}
+
+section div#msec{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*----------------------ARTICLE START---------------------- */
+
+ article{
+  margin-top: 10%;
+  margin-bottom: 9%;
+
+ }
+
+ article h3{
+  display: none;
+ }
+
+ article div.allWraP{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+  
+ }
+
+ article div.allWraP div.left{
+  float: left;
+  width: 50%;
+
+ }
+
+ article div.allWraP div.left img{
+  width: 71%;
+ }
+
+ article div.allWraP div.right{
+  float: right;
+  width: 50%;
+ }
+
+ article div.allWraP div.right p.ptxt{
+  display: block;
+  font-family: Pretendard-Light;
+  margin-top: 3%;
+  text-align: left;
+  color: #575757;
+  font-size: 17px;
+ }
+
+ article span.stitle {
+  display: block;
+  font-family: 'Times New Roman', Times, serif;
+  color: #b69d74;
+  font-size: 21px;
+  text-align: left;
+  margin-top: 5%;
+}
+
+
+article span+p {
+  font-family: Pretendard-Light;
+  color: #060606;
+  margin-top: 3%;
+  font-size: 26px;
+  margin-bottom: 4%;
+  text-align: left;
+}
+
+div.right span:last-child {
+  display: block;
+  border: 1px #b69d74 solid;
+  /* padding: 5px; */
+  transition: all .5s;
+  width: 109px;
+  margin: auto;
+  margin-top: 5%;
+}
+
+div#service>div.awrap>div {
+  position: relative;
+  width: 26.3333%;
+  border: 1px solid #576379;
+  height: 200px;
+  margin: auto;
+  padding: 21px;
+  margin-top: 10%;
+  transition: all .5s;
+  cursor: pointer;
+  float: left;
+  margin-left: 2.5%;
+}
+
+/* div#promo{
+
+}
+
+div#promo h3{
+
+}
+
+div#promo ul{
+  width: 93%;
+  margin: auto;
+}
+
+
+div#promo ul.container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+div#promo>ul>li{
+
+margin-left: 0;
+width: 20vw;
+
+} */
+
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.pcontiner{
+   
+  width: 70%;
+  margin: auto;
+  display: flex;
+ justify-content: space-between;
+    
+}
+
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 433px;
+
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #1a222f;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box-front img{
+  box-shadow: rgb(0 0 0 / 15%) 10.95px 4.95px 3.6px;
+  width:300px;
+}
+
+
+
+
+
+div#why {
+  background-image: url(../img/backimgM2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: 15%;
+  text-align: center;
+  font-family: Pretendard-Light;
+  padding: 12px;
+  padding-bottom: 5%;
+}
+
+
+
+div#why ul {
+  display: flex;
+  justify-content: center;
+}
+
+div#why ul li {
+  /* display: flex; */
+  width: 50%;
+}
+
+div#why span:first-child {
+  margin-top: 2%;
+}
+
+
+div#review img {
+  width: 6%;
+}
+
+div#review{
+  background-image: url(../img/backimgPC2.png);
+  background-size: cover;
+  text-align: center;
+  overflow: hidden;
+  font-family: Pretendard-Light;
+  position: relative;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+div#review h3 {
+  margin-top: 8%;
+  margin-bottom: 30px;
+}
+
+
+div#review p {
+  width: 50%;
+  margin: auto;
+  margin-top: 26px;
+  font-size: 16px;
+  color: #0b0b0a;
+}
+
+
+div#review p::after {
+  content: "";
+  position: absolute;
+  border: 0;
+  width: 106px;
+  height: 3px;
+  background: #b69d74;
+  z-index: 35;
+  /* margin: auto; */
+  left: 46%;
+  top: 58%;
+}
+
+div#review>div.photo>ul {
+  margin-top: 14%;
+  width: 59%;
+  margin: auto;
+  margin-top: 14%;
+}
+
+
+div#apply{
+background-image: none;
+padding: 0;
+overflow: hidden;
+margin-top: 5%;
+position: relative;
+padding-bottom: 5%;
+
+}
+
+div#apply div.apr {
+  background-color: #b69d74;
+  position: absolute;
+  width: 48%;
+  height: 44vh;
+  top: 38%;
+  left: 55%;
+}
+
+
+
+
+div#apply div span{
+display: none; 
+
+}
+
+div#apply div {
+  font-size: 0;
+  color: #fff;
+  margin-left: 0;
+  /* margin-top: 30px; */
+  padding-top: 30px;
+  text-align: left;
+}
+
+
+div#apply div.apl {
+  float: left;
+  width: 55%
+}
+
+
+
+div#apply div.apl img{
+  display: block;
+  width: 100%;
+}
+
+div#apply div.apr{
+background-color: #b69d74;
+text-align: center;
+
+}
+
+div#apply>div.apl>span {
+display: none;
+}
+
+div#apply div.apr img {
+  display: block;
+  width: 23%;
+  margin: auto;
+  margin-top: 7%;
+}
+
+div#apply div.apr span{
+  display: block;
+  font-size: 22px;
+  width: 110px;
+  border: 1px solid;
+  border-radius: 21px;
+  padding: 10px;
+  margin: auto;
+  margin-top: 14px;
+}
+
+
+div#apply div.apl div.apltxt{
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;
+  display: block;
+  
+  top: 0;
+  left: 0;
+  margin-left: 1%;
+    margin-top: 1%;
+
+}
+
+div#gallery ul {
+  margin-top: 5%;
+  width: 80%;
+  margin: auto;
+  margin-top: 4%;
+}
+
+
+
+div#gallery ul li {
+  float: left;
+  width: 25%;
+  margin-top: 1%;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  /* overflow: hidden; */
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+
+
+
+footer {
+  font-family: Pretendard-thin;
+  background-color: #2d2d2d;
+  margin-top: 9%;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+footer div.fwrap{
+  width: 80%;
+  margin: auto;
+}
+
+footer div.fwrap div{
+  float: left;
+  width: 33.3333%;
+}
+
+footer div h2 {
+  padding-top: 2%;
+  text-align: left;
+}
+
+footer div.fwrap div:first-child p {
+  text-align: left;
+}
+
+footer div.fwrap div:first-child ul {
+  width: 50%;
+}
+
+
+
+footer div.fwrap div:nth-child(2) span {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 18px;
+  display: block;
+}
+
+footer div.fwrap div:nth-child(2) p {
+
+  margin: auto;
+
+  margin-top: 4%;
+}
+
+footer div.fwrap div:last-child span {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 18px;
+  display: block;
+}
+
+footer div.fwrap div:last-child span {
+  color: #fff;
+
+}
+
+footer div.fwrap div:last-child ul{
+  color: #fff;
+
+}
+
+footer div.fwrap div:last-child ul li{
+
+}
+
+
+}
