@@ -1,7 +1,14 @@
 html, body, header, nav, section, article, footer, div, 
 h1, h2, h3, h4, h5, h6, dl, dt, dd, p, ul, li, a, img,span{
   margin: 0;
-  padding: 0;}
+  padding: 0;
+}
+
+html,body{
+  overflow-x: hidden;
+}
+
+
 
 ul, li {
   list-style: none;
@@ -11,11 +18,6 @@ a{
   text-decoration: none;
   color: #3f3f3f;
 }
-
-body{
-  overflow-x: hidden;
-}
-
 
 
 @font-face {
@@ -32,6 +34,9 @@ body{
   font-family: Pretendard-thin;
   src: url(../fonts/Pretendard-Thin.otf);
 }
+
+
+
 
 
 
@@ -57,9 +62,12 @@ body{
 
 /* <!-- --------------------HEADER START-------------------- --> */
 
+
+
 header{
   position: absolute;
   width: 100%;
+ 
 }
 
 header h1{
@@ -86,7 +94,7 @@ header div.msidebar{
   font-family: Pretendard-Light;
   width: 59vw;
   background: #3e4659;
-  position: absolute;
+  position: fixed;
   text-align: center;
   top: 0%;
   height: 204vh;
@@ -99,8 +107,11 @@ header div.msidebar{
 }
 
 .show{
-  transform: translateX(65%);
+  transform: translateX(70%);
 }
+
+
+
 
 
 
@@ -161,7 +172,7 @@ header div.msidebar>ul>li.closebtn{
   font-size: 2em;
   position: absolute;
   top: 3px;
-  left: -16%;
+  left: -20%;
   border-bottom: 0px solid white;
   /* width: 60px; */
   display: inline-block;
@@ -447,11 +458,7 @@ div#promo ul {
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
 .pcontiner{
-  width: 300vw;
-  display: flex;
-  margin: auto;
-  justify-content: space-between;
-  text-align: center;
+
     
 }
 
@@ -461,8 +468,8 @@ div#promo ul {
   width: 300px;
   height: 433px;
   perspective: 1000px;
-  /* float: left; */
   margin-left: 7%;
+  margin: auto;
 }
 
 /* This container is needed to position the front and back side */
@@ -520,6 +527,13 @@ div#promo ul {
 
 
 
+.flip-box:nth-child(2) {
+  display: none;
+}
+
+.flip-box:nth-child(3) {
+  display: none;
+}
 
 
 
@@ -663,7 +677,7 @@ div#review p::after{
   z-index: 35;
   /* margin: auto; */
   left: 46%;
-  top: 64%;
+  top: 70%;
 }
 
 div#review>div.photo{
@@ -713,7 +727,7 @@ div#review>div.photo>ul>li:nth-child(2)>img{
 div#apply{
   background-image: url(../img/counselingM.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   margin-top: 15%;
   font-family: Pretendard-Light;
   padding: 30px;
@@ -801,6 +815,8 @@ footer{
   margin-top: 10%;
   text-align: center;
   color: #fff;
+  overflow: hidden;
+
 }
 
 footer div {
@@ -858,13 +874,13 @@ footer div span ul li{
     transform: translateX(190);
   } */
   
-  .show{
+   .show{
     transform: translateX(113%);
-  }
+  } 
   
   header div.msidebar {
   
-    width: 47vw;
+        width: 48vw;
 }
 
 header div.msidebar>ul>li.closebtn {
@@ -917,9 +933,8 @@ div#service>span:last-child>a{
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
 .pcontiner{
-    width: 70%;
+  width: 80%;
     margin: auto;
-    display: block;
 }
 
 
@@ -973,6 +988,13 @@ div#service>span:last-child>a{
   box-shadow: rgb(0 0 0 / 15%) 10.95px 4.95px 3.6px;
   width:300px;
 }
+
+.flip-box:nth-child(2),.flip-box:nth-child(3) {
+  display: block;
+}
+
+
+
 
 
 
@@ -1480,6 +1502,7 @@ div#apply div {
 div#apply div.apl {
   float: left;
   width: 55%
+
 }
 
 
@@ -1530,6 +1553,18 @@ div#apply div.apl div.apltxt{
     margin-top: 1%;
 
 }
+
+div#apply div.apr span{
+  transition: all .5s;
+}
+
+
+div#apply div.apr span:hover {
+  background-color: #fff;
+  color:#b69d74;
+}
+
+
 
 div#gallery ul {
   margin-top: 5%;

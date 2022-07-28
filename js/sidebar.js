@@ -1,11 +1,11 @@
 
 
 document.querySelector('.hambtn').addEventListener('click', function () {
-  document.querySelector('.msidebar').classList.add('show')
+  document.querySelector('.msidebar').classList.add("show")
 });
 
 document.querySelector('.closebtn').addEventListener('click', function () {
-  document.querySelector('.msidebar').classList.remove('show')
+  document.querySelector('.msidebar').classList.remove("show")
 });
 
 //  window.addEventListener('scroll', function(){
